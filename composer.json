@@ -19,7 +19,12 @@
   "authors": [
     {
       "name": "iTryIt",
-      "homepage": "https://github.com/iTryIt/jenkins-php-api"
+      "homepage": "https://github.com/iTryIt",
+      "email": "409970188@qq.com"
+    },
+    {
+      "name": "jenkins-khan",
+      "homepage": "https://github.com/jenkins-khan/jenkins-php-api"
     }
   ]
 }
