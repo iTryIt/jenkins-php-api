@@ -1,9 +1,9 @@
 {
-  "name": "jenkins-khan/jenkins-api",
+  "name": "itryit/jenkins-api",
   "type": "library",
   "description": "Jenkins PHP API",
   "keywords": ["jenkins", "api"],
-  "homepage": "https://github.com/jenkins-khan/jenkins-php-api",
+  "homepage": "https://github.com/iTryIt/jenkins-php-api",
   "license": "MIT",
   "autoload": {
     "psr-4": {
@@ -18,8 +18,8 @@
   },
   "authors": [
     {
-      "name": "jenkins-khan",
-      "homepage": "https://github.com/jenkins-khan/jenkins-php-api"
+      "name": "iTryIt",
+      "homepage": "https://github.com/iTryIt/jenkins-php-api"
     }
   ]
 }

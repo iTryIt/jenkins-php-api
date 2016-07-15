@@ -312,6 +312,7 @@ class Jenkins
 
         curl_setopt($curl, \CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($curl, \CURLOPT_POST, 1);
+        curl_setopt($curl, \CURLOPT_POSTFIELDS, []);
 
         $headers = array();
 
@@ -551,7 +552,7 @@ class Jenkins
         curl_setopt($curl, \CURLOPT_POSTFIELDS, $xmlConfiguration);
         curl_setopt($curl, \CURLOPT_RETURNTRANSFER, 1);
 
-        $headers = array('Content-Type: text/xml');
+        $headers = array('Content-Type: text/xml;charset=utf-8');
 
         if ($this->areCrumbsEnabled()) {
             $headers[] = $this->getCrumbHeader();
@@ -582,7 +583,7 @@ class Jenkins
         curl_setopt($curl, \CURLOPT_POST, 1);
         curl_setopt($curl, \CURLOPT_POSTFIELDS, $configuration);
 
-        $headers = array('Content-Type: text/xml');
+        $headers = array('Content-Type: text/xml;charset=utf-8');
 
         if ($this->areCrumbsEnabled()) {
             $headers[] = $this->getCrumbHeader();
@@ -624,6 +625,7 @@ class Jenkins
 
         $curl = curl_init($url);
         curl_setopt($curl, \CURLOPT_POST, 1);
+        curl_setopt($curl, \CURLOPT_POSTFIELDS, []);
 
         $headers = array();
 
@@ -652,6 +654,7 @@ class Jenkins
 
         $curl = curl_init($url);
         curl_setopt($curl, \CURLOPT_POST, 1);
+        curl_setopt($curl, \CURLOPT_POSTFIELDS, []);
 
         $headers = array();
 
@@ -680,6 +683,7 @@ class Jenkins
         $url  = sprintf('%s/computer/%s/toggleOffline', $this->baseUrl, $computerName);
         $curl = curl_init($url);
         curl_setopt($curl, \CURLOPT_POST, 1);
+        curl_setopt($curl, \CURLOPT_POSTFIELDS, []);
 
         $headers = array();
 
@@ -704,6 +708,7 @@ class Jenkins
         $url  = sprintf('%s/computer/%s/doDelete', $this->baseUrl, $computerName);
         $curl = curl_init($url);
         curl_setopt($curl, \CURLOPT_POST, 1);
+        curl_setopt($curl, \CURLOPT_POSTFIELDS, []);
 
         $headers = array();
 
